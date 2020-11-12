@@ -17,6 +17,15 @@
 		8B290A8825599C2100BEF143 /* RandomNameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B290A8725599C2100BEF143 /* RandomNameUseCase.swift */; };
 		8B290A8E255AAAF100BEF143 /* ProfessionViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B290A8D255AAAF100BEF143 /* ProfessionViewControllers.swift */; };
 		8B290A95255AB2B800BEF143 /* Professional.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B290A94255AB2B800BEF143 /* Professional.storyboard */; };
+		8B736EAB255D0C83004523AA /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736EAA255D0C83004523AA /* Credentials.swift */; };
+		8B736EB2255D0E23004523AA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736EB1255D0E23004523AA /* NetworkService.swift */; };
+		8B736EB6255D0E66004523AA /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736EB5255D0E66004523AA /* AppError.swift */; };
+		8B736EBA255D0EA2004523AA /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736EB9255D0EA2004523AA /* NetworkUtils.swift */; };
+		8B736EC0255D13B7004523AA /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736EBF255D13B7004523AA /* MockAPI.swift */; };
+		8B736EC3255D15EB004523AA /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736EC2255D15EB004523AA /* MockData.swift */; };
+		8B736EC6255D1D90004523AA /* MockDeveloperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736EC5255D1D90004523AA /* MockDeveloperService.swift */; };
+		8B736ECC255D3412004523AA /* GetDevelopersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736ECB255D3412004523AA /* GetDevelopersUseCase.swift */; };
+		8B736EEF255D36C8004523AA /* Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736EEE255D36C8004523AA /* Reactive.swift */; };
 		8BFF1A5925597F0600061C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF1A5825597F0600061C9E /* AppDelegate.swift */; };
 		8BFF1A5B25597F0600061C9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF1A5A25597F0600061C9E /* SceneDelegate.swift */; };
 		8BFF1A6025597F0600061C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF1A5E25597F0600061C9E /* Main.storyboard */; };
@@ -38,6 +47,15 @@
 		8B290A8725599C2100BEF143 /* RandomNameUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNameUseCase.swift; sourceTree = "<group>"; };
 		8B290A8D255AAAF100BEF143 /* ProfessionViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionViewControllers.swift; sourceTree = "<group>"; };
 		8B290A94255AB2B800BEF143 /* Professional.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Professional.storyboard; sourceTree = "<group>"; };
+		8B736EAA255D0C83004523AA /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		8B736EB1255D0E23004523AA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8B736EB5255D0E66004523AA /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		8B736EB9255D0EA2004523AA /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		8B736EBF255D13B7004523AA /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
+		8B736EC2255D15EB004523AA /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		8B736EC5255D1D90004523AA /* MockDeveloperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDeveloperService.swift; sourceTree = "<group>"; };
+		8B736ECB255D3412004523AA /* GetDevelopersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDevelopersUseCase.swift; sourceTree = "<group>"; };
+		8B736EEE255D36C8004523AA /* Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reactive.swift; sourceTree = "<group>"; };
 		8BFF1A5525597F0600061C9E /* ArrayOfDevelopers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArrayOfDevelopers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFF1A5825597F0600061C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BFF1A5A25597F0600061C9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +105,10 @@
 		8B0FCCB6255AB7FC00B1237A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8B736EB4255D0E52004523AA /* Protocols */,
+				8B736EAD255D0DD6004523AA /* Network */,
 				8B0FCCB7255AB80B00B1237A /* Extensions */,
+				8B736EAA255D0C83004523AA /* Credentials.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -97,6 +118,7 @@
 			children = (
 				8B078B54255C24F800535600 /* UIImagePickerController */,
 				8B0FCCB8255AB81900B1237A /* UIViewController */,
+				8B736EEE255D36C8004523AA /* Reactive.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -131,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				8B290A762559893D00BEF143 /* Developer.swift */,
+				8B736EC2255D15EB004523AA /* MockData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,6 +194,66 @@
 				8BFF1A6325597F0700061C9E /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8B736EAD255D0DD6004523AA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8B736ECA255D33F4004523AA /* UseCases */,
+				8B736EAE255D0DE1004523AA /* Moya */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8B736EAE255D0DE1004523AA /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				8B736EBC255D111A004523AA /* API */,
+				8B736EAF255D0DEE004523AA /* Services */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
+		8B736EAF255D0DEE004523AA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B736EB0255D0DFF004523AA /* Base */,
+				8B736EC5255D1D90004523AA /* MockDeveloperService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8B736EB0255D0DFF004523AA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8B736EB1255D0E23004523AA /* NetworkService.swift */,
+				8B736EB9255D0EA2004523AA /* NetworkUtils.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8B736EB4255D0E52004523AA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8B736EB5255D0E66004523AA /* AppError.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8B736EBC255D111A004523AA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8B736EBF255D13B7004523AA /* MockAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8B736ECA255D33F4004523AA /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				8B736ECB255D3412004523AA /* GetDevelopersUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		8BFF1A4C25597F0600061C9E = {
@@ -351,15 +434,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B078B57255C255100535600 /* UIImagePickerController+DidFinishPicking.swift in Sources */,
+				8B736ECC255D3412004523AA /* GetDevelopersUseCase.swift in Sources */,
 				8B290A772559893D00BEF143 /* Developer.swift in Sources */,
 				8B290A65255982F200BEF143 /* DevelopersViewController.swift in Sources */,
+				8B736EEF255D36C8004523AA /* Reactive.swift in Sources */,
+				8B736EC3255D15EB004523AA /* MockData.swift in Sources */,
+				8B736EC6255D1D90004523AA /* MockDeveloperService.swift in Sources */,
 				8B290A8E255AAAF100BEF143 /* ProfessionViewControllers.swift in Sources */,
 				8BFF1A5925597F0600061C9E /* AppDelegate.swift in Sources */,
 				8B290A8825599C2100BEF143 /* RandomNameUseCase.swift in Sources */,
+				8B736EB6255D0E66004523AA /* AppError.swift in Sources */,
+				8B736EBA255D0EA2004523AA /* NetworkUtils.swift in Sources */,
+				8B736EAB255D0C83004523AA /* Credentials.swift in Sources */,
 				8B0FCCBB255AB83700B1237A /* UIViewController+Navigation.swift in Sources */,
 				8BFF1A5B25597F0600061C9E /* SceneDelegate.swift in Sources */,
 				8B290A6A255984B400BEF143 /* DevelopersTableViewCell.swift in Sources */,
+				8B736EC0255D13B7004523AA /* MockAPI.swift in Sources */,
 				8B0FCCD0255AC42100B1237A /* R.generated.swift in Sources */,
+				8B736EB2255D0E23004523AA /* NetworkService.swift in Sources */,
 				8B290A7A255989ED00BEF143 /* DevelopersViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

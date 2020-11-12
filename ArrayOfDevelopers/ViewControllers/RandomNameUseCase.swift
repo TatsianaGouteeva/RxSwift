@@ -30,7 +30,6 @@ extension RandomNameUseCase: UseCaseType {
     }
     
     struct Output {
-//        let name: Driver<String>
         let developer: Driver<Developer>
     }
     
