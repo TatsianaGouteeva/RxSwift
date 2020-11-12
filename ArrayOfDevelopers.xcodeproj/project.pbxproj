@@ -105,10 +105,10 @@
 		8B0FCCB6255AB7FC00B1237A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				8B736EB4255D0E52004523AA /* Protocols */,
-				8B736EAD255D0DD6004523AA /* Network */,
-				8B0FCCB7255AB80B00B1237A /* Extensions */,
 				8B736EAA255D0C83004523AA /* Credentials.swift */,
+				8B0FCCB7255AB80B00B1237A /* Extensions */,
+				8B736EAD255D0DD6004523AA /* Network */,
+				8B736EB4255D0E52004523AA /* Protocols */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -142,9 +142,9 @@
 		8B290A552559800600BEF143 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				8B0FCCCF255AC42100B1237A /* R.generated.swift */,
 				8BFF1A5825597F0600061C9E /* AppDelegate.swift */,
 				8BFF1A5A25597F0600061C9E /* SceneDelegate.swift */,
+				8B0FCCCF255AC42100B1237A /* R.generated.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -163,8 +163,8 @@
 			children = (
 				8B290A64255982F200BEF143 /* DevelopersViewController.swift */,
 				8B290A69255984B400BEF143 /* DevelopersTableViewCell.swift */,
-				8B290A8725599C2100BEF143 /* RandomNameUseCase.swift */,
 				8B290A8D255AAAF100BEF143 /* ProfessionViewControllers.swift */,
+				8B290A8725599C2100BEF143 /* RandomNameUseCase.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,8 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				8BFF1A5E25597F0600061C9E /* Main.storyboard */,
-				8B290A94255AB2B800BEF143 /* Professional.storyboard */,
 				8BFF1A6325597F0700061C9E /* LaunchScreen.storyboard */,
+				8B290A94255AB2B800BEF143 /* Professional.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -199,8 +199,8 @@
 		8B736EAD255D0DD6004523AA /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				8B736ECA255D33F4004523AA /* UseCases */,
 				8B736EAE255D0DE1004523AA /* Moya */,
+				8B736ECA255D33F4004523AA /* UseCases */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -208,7 +208,6 @@
 		8B736EAE255D0DE1004523AA /* Moya */ = {
 			isa = PBXGroup;
 			children = (
-				8B736EBC255D111A004523AA /* API */,
 				8B736EAF255D0DEE004523AA /* Services */,
 			);
 			path = Moya;
@@ -218,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				8B736EB0255D0DFF004523AA /* Base */,
+				8B736EBF255D13B7004523AA /* MockAPI.swift */,
 				8B736EC5255D1D90004523AA /* MockDeveloperService.swift */,
 			);
 			path = Services;
@@ -238,14 +238,6 @@
 				8B736EB5255D0E66004523AA /* AppError.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		8B736EBC255D111A004523AA /* API */ = {
-			isa = PBXGroup;
-			children = (
-				8B736EBF255D13B7004523AA /* MockAPI.swift */,
-			);
-			path = API;
 			sourceTree = "<group>";
 		};
 		8B736ECA255D33F4004523AA /* UseCases */ = {
@@ -277,10 +269,10 @@
 		8BFF1A5725597F0600061C9E /* ArrayOfDevelopers */ = {
 			isa = PBXGroup;
 			children = (
-				8B0FCCB6255AB7FC00B1237A /* Common */,
 				8BFF1A6625597F0700061C9E /* Info.plist */,
 				8B290A552559800600BEF143 /* Application */,
 				8B290A5F2559806500BEF143 /* Models */,
+				8B0FCCB6255AB7FC00B1237A /* Common */,
 				8B290A602559807F00BEF143 /* ViewControllers */,
 				8B290A61255980C400BEF143 /* ViewModels */,
 				8B290A62255980F800BEF143 /* Resources */,
