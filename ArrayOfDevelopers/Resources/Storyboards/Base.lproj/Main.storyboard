@@ -20,38 +20,54 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXd-5M-Kgu" userLabel="GetMock">
+                                    <rect key="frame" x="10" y="7" width="122" height="30"/>
+                                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                                    <state key="normal" title="Get Mock Data">
+                                        <color key="titleColor" systemColor="systemIndigoColor"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipstobounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Go-Hi-Tq0">
-                                    <rect key="frame" x="371" y="10" width="33" height="34"/>
-                                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                    <rect key="frame" x="282" y="5" width="122" height="34"/>
+                                    <color key="backgroundColor" systemColor="systemTealColor"/>
                                     <color key="tintColor" systemColor="labelColor"/>
                                     <state key="normal" title="Add">
-                                        <color key="titleColor" systemColor="systemOrangeColor"/>
+                                        <color key="titleColor" systemColor="systemIndigoColor"/>
                                     </state>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXd-5M-Kgu" userLabel="GetMock">
-                                    <rect key="frame" x="156" y="7" width="103" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                    <state key="normal" title="Get Mock Data"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipstobounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstItem="9Go-Hi-Tq0" firstAttribute="top" secondItem="6J1-S0-ykw" secondAttribute="top" constant="10" id="LH1-oh-zVh"/>
-                                <constraint firstAttribute="trailing" secondItem="9Go-Hi-Tq0" secondAttribute="trailing" constant="10" id="zSE-Fb-UV2"/>
+                                <constraint firstItem="VXd-5M-Kgu" firstAttribute="leading" secondItem="6J1-S0-ykw" secondAttribute="leading" constant="10" id="OAZ-aW-bgd"/>
+                                <constraint firstItem="9Go-Hi-Tq0" firstAttribute="width" secondItem="VXd-5M-Kgu" secondAttribute="width" id="XVy-Xa-Xc0"/>
+                                <constraint firstItem="9Go-Hi-Tq0" firstAttribute="leading" secondItem="VXd-5M-Kgu" secondAttribute="trailing" constant="150" id="ZaW-YF-qSR"/>
+                                <constraint firstAttribute="trailing" secondItem="9Go-Hi-Tq0" secondAttribute="trailing" constant="10" id="kmj-6W-oh5"/>
+                                <constraint firstItem="VXd-5M-Kgu" firstAttribute="centerY" secondItem="6J1-S0-ykw" secondAttribute="centerY" id="sV4-N7-1Ro"/>
+                                <constraint firstItem="9Go-Hi-Tq0" firstAttribute="centerY" secondItem="6J1-S0-ykw" secondAttribute="centerY" id="wxi-Vb-1Vh"/>
                             </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="o69-n1-YTB" customClass="DevelopersTableViewCell" customModule="ArrayOfDevelopers" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="414" height="21.5"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="21"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o69-n1-YTB" id="uMN-lc-VzS">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="21.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="21"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K87-PL-IL3" userLabel="name">
-                                            <rect key="frame" x="0.0" y="0.0" width="120" height="21.5"/>
-                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            <rect key="frame" x="10" y="0.0" width="120" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="120" id="Fgw-Mt-8xw"/>
                                             </constraints>
@@ -60,7 +76,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2S-GN-o26" userLabel="profession">
-                                            <rect key="frame" x="140" y="0.0" width="274" height="21.5"/>
+                                            <rect key="frame" x="150" y="0.0" width="264" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -72,7 +88,7 @@
                                         <constraint firstAttribute="bottom" secondItem="K87-PL-IL3" secondAttribute="bottom" id="Dfk-cW-bcC"/>
                                         <constraint firstItem="i2S-GN-o26" firstAttribute="leading" secondItem="K87-PL-IL3" secondAttribute="trailing" constant="20" id="X7M-of-T6b"/>
                                         <constraint firstAttribute="bottom" secondItem="i2S-GN-o26" secondAttribute="bottom" id="emq-o5-74L"/>
-                                        <constraint firstItem="K87-PL-IL3" firstAttribute="leading" secondItem="uMN-lc-VzS" secondAttribute="leading" id="jQd-ag-s3o"/>
+                                        <constraint firstItem="K87-PL-IL3" firstAttribute="leading" secondItem="uMN-lc-VzS" secondAttribute="leading" constant="10" id="r5e-h8-SfN"/>
                                         <constraint firstItem="i2S-GN-o26" firstAttribute="top" secondItem="uMN-lc-VzS" secondAttribute="top" id="xJr-Z5-HBh"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -112,17 +128,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
